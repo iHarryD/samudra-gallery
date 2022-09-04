@@ -20,6 +20,7 @@
 
 body {
   background: var(--PRIMARY-BACKGROUND-CLR);
+  color: #fff;
   font-family: "Inter", sans-serif;
   padding: 1.5rem 3rem;
 }

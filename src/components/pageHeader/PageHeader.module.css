@@ -1,0 +1,32 @@
+.page-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p1-heading {
+  color: var(--ACCENT-BLUE-CLR);
+  font-family: "Cormorant Upright", serif;
+  font-size: 3.3em;
+  font-weight: 600;
+}
+
+.search-bar-container {
+  --SEARCH-PADDING-X: 1.5rem;
+  position: relative;
+}
+
+.search-input {
+  border: 1px solid #212325;
+  border-radius: 5rem;
+  padding: 0.8rem var(--SEARCH-PADDING-X);
+}
+
+.search-btn {
+  color: var(--ACCENT-LIGHT-GREY-CLR);
+  font-size: 1.2em;
+  position: absolute;
+  right: var(--SEARCH-PADDING-X);
+  top: 50%;
+  transform: translateY(-50%);
+}
