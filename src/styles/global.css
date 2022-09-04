@@ -10,6 +10,7 @@
   --ACCENT-BLUE-CLR: #2e8bff;
   --ACCENT-DARK-GREY-CLR: #323337;
   --ACCENT-LIGHT-GREY-CLR: #6f7378;
+  --GREY-TEXT-CLR: #b7bec7;
   --PRIMARY-BACKGROUND-CLR: #111315;
   --PRIMARY-BTN-CLR: #fff;
 
@@ -22,7 +23,7 @@ body {
   background: var(--PRIMARY-BACKGROUND-CLR);
   color: #fff;
   font-family: "Inter", sans-serif;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 5rem;
 }
 
 a,

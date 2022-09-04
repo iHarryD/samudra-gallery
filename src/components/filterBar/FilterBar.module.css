@@ -16,6 +16,11 @@
   padding: 0.7rem 0;
 }
 
+.active-filter {
+  border-bottom: 2px solid currentColor;
+  color: var(--GREY-TEXT-CLR);
+}
+
 .new-category-btn {
   background: var(--ACCENT-DARK-GREY-CLR);
   font-size: 0.9em;

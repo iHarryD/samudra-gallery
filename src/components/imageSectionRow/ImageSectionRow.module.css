@@ -1,0 +1,27 @@
+.section-details {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+}
+
+.section-title {
+  color: var(--ACCENT-BLUE-CLR);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.section-date-span {
+  color: var(--ACCENT-LIGHT-GREY-CLR);
+  font-size: 1.2rem;
+}
+
+.image-section {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 8fr;
+}
+
+.images-container {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}

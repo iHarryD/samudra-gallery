@@ -1,0 +1,27 @@
+.image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.image-title {
+  color: var(--GREY-TEXT-CLR);
+  text-align: center;
+}
+
+.favorite-btn {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}

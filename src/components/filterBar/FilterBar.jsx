@@ -1,13 +1,13 @@
 import genericStyles from "../../styles/Generic.module.css";
 import filterBarStyles from "./FilterBar.module.css";
 
-export function FilterBar() {
+export function FilterBar({ filterState, filterStateSetter }) {
   return (
     <div className={filterBarStyles["filter-bar"]}>
       <ul className={filterBarStyles["filters-container"]}>
         {[
           "All photos",
-          "💰 Architecture",
+          "Architecture",
           "🏔 Kashmir",
           "⛵ Seaside",
           "🐟 Lake view",
@@ -15,7 +15,18 @@ export function FilterBar() {
           "China",
           "Argentina",
         ].map((filter) => (
-          <li>{filter}</li>
+          <li
+            key={filter}
+            className={
+              filterState.toLowerCase() === filter.toLowerCase()
+                ? filterBarStyles["active-filter"]
+                : ""
+            }
+          >
+            <button onClick={() => filterStateSetter(filter.toLowerCase())}>
+              {filter}
+            </button>
+          </li>
         ))}
       </ul>
       <button
