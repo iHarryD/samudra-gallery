@@ -3,13 +3,25 @@
   border-bottom: 1px solid var(--ACCENT-DARK-GREY-CLR);
   display: flex;
   font-size: 0.9rem;
+  gap: 1rem;
   justify-content: space-between;
 }
 
+.filter-bar button {
+  min-width: max-content;
+}
+
 .filters-container {
+  align-items: flex-end;
   color: var(--ACCENT-LIGHT-GREY-CLR);
   display: flex;
-  gap: 2rem;
+  gap: clamp(1rem, 0.8rem + 2vw, 2rem);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.filters-container::-webkit-scrollbar {
+  display: none;
 }
 
 .filters-container > li {

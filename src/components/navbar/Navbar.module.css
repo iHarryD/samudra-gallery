@@ -8,20 +8,28 @@
   --PRIMARY-BTN-CLR: var(--ACCENT-BLUE-CLR);
   align-items: center;
   display: flex;
-  gap: 10px;
   font-size: 1.13em;
+  gap: 10px;
+  justify-content: center;
+  min-width: 2rem;
 }
 
 .page-navbar {
   --PRIMARY-BTN-CLR: #0000;
   background: #000;
   border-radius: 2rem;
+  color: var(--ACCENT-LIGHT-GREY-CLR);
   font-weight: 300;
   padding: 5px;
 }
 
-.active-page {
+.page-navbar button {
+  color: inherit;
+}
+
+.page-navbar .active-page {
   --PRIMARY-BTN-CLR: var(--ACCENT-DARK-GREY-CLR);
+  color: var(--GREY-TEXT-CLR);
 }
 
 .widget-icons-container {
@@ -30,4 +38,40 @@
   display: flex;
   font-size: 1.5em;
   gap: 1.2em;
+}
+
+@media (max-width: 1011px) {
+  .upload-btn span {
+    display: none;
+  }
+}
+
+@media (max-width: 428px) {
+  .widget-icons-container {
+    display: none;
+  }
+
+  .page-navbar {
+    background: none;
+  }
+
+  .active-page {
+    background: none;
+    border-bottom: 1px solid currentColor;
+    border-radius: 0;
+    padding: 0 0 3px;
+    position: relative;
+  }
+
+  .active-page::after {
+    content: ">";
+    position: absolute;
+    top: 50%;
+    right: -1.2rem;
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+  .page-navbar > button:not(.active-page) {
+    display: none;
+  }
 }

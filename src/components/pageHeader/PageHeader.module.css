@@ -4,15 +4,15 @@
   justify-content: space-between;
 }
 
-.p1-heading {
+.page-heading {
   color: var(--ACCENT-BLUE-CLR);
   font-family: "Cormorant Upright", serif;
-  font-size: 3.3em;
+  font-size: clamp(1.5em, 1.4em + 2vw, 3.3em);
   font-weight: 600;
 }
 
 .search-bar-container {
-  --SEARCH-PADDING-X: 1.5rem;
+  --SEARCH-PADDING-X: clamp(1rem, 0.5rem + 2vw, 1.5rem);
   position: relative;
 }
 
@@ -29,4 +29,14 @@
   right: var(--SEARCH-PADDING-X);
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media (max-width: 428px) {
+  .page-header {
+    justify-content: center;
+  }
+
+  .page-heading {
+    display: none;
+  }
 }

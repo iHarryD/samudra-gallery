@@ -28,7 +28,7 @@ export function Navbar() {
       <button
         className={`${genericStyles["primary-btn"]} ${navbarStyles["upload-btn"]}`}
       >
-        <FontAwesomeIcon icon={faPlusCircle} /> Upload photos
+        <FontAwesomeIcon icon={faPlusCircle} /> <span>Upload photos</span>
       </button>
     </nav>
   );

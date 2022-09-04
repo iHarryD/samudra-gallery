@@ -5,7 +5,7 @@ import pageHeaderStyles from "./PageHeader.module.css";
 export function PageHeader() {
   return (
     <div className={pageHeaderStyles["page-header"]}>
-      <div className={pageHeaderStyles["p1-heading"]}>Library</div>
+      <div className={pageHeaderStyles["page-heading"]}>Library</div>
       <div className={pageHeaderStyles["search-bar-container"]}>
         <input
           className={pageHeaderStyles["search-input"]}
