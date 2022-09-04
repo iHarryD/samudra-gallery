@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ACCENT-BLUE-CLR: #2e8bff;
+  --ACCENT-DARK-GREY-CLR: #323337;
+  --ACCENT-LIGHT-GREY-CLR: #6f7378;
+  --PRIMARY-BACKGROUND-CLR: #111315;
+  --PRIMARY-BTN-CLR: #fff;
+
+  --PRIMARY-BTN-BORDER-RADIUS: 2rem;
+  --PRIMARY-BTN-PADDING-X: 0.5em;
+  --PRIMARY-BTN-PADDING-Y: 1em;
+}
+
+body {
+  background: var(--PRIMARY-BACKGROUND-CLR);
+  font-family: "Inter", sans-serif;
+  padding: 1.5rem 3rem;
+}
+
+a,
+button,
+input,
+li {
+  all: unset;
+}
+
+a,
+button {
+  cursor: pointer;
+}
