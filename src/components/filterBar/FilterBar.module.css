@@ -1,0 +1,22 @@
+.filter-bar {
+  align-items: center;
+  border-bottom: 1px solid var(--ACCENT-DARK-GREY-CLR);
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-between;
+}
+
+.filters-container {
+  color: var(--ACCENT-LIGHT-GREY-CLR);
+  display: flex;
+  gap: 2rem;
+}
+
+.filters-container > li {
+  padding: 0.7rem 0;
+}
+
+.new-category-btn {
+  background: var(--ACCENT-DARK-GREY-CLR);
+  font-size: 0.9em;
+}
