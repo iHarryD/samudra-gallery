@@ -1,0 +1,33 @@
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.upload-btn {
+  --PRIMARY-BTN-CLR: var(--ACCENT-BLUE-CLR);
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  font-size: 1.13em;
+}
+
+.page-navbar {
+  --PRIMARY-BTN-CLR: #0000;
+  background: #000;
+  border-radius: 2rem;
+  font-weight: 300;
+  padding: 5px;
+}
+
+.active-page {
+  --PRIMARY-BTN-CLR: var(--ACCENT-DARK-GREY-CLR);
+}
+
+.widget-icons-container {
+  align-items: center;
+  color: var(--ACCENT-LIGHT-GREY-CLR);
+  display: flex;
+  font-size: 1.5em;
+  gap: 1.2em;
+}

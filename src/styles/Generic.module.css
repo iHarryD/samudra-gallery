@@ -1,0 +1,6 @@
+.primary-btn {
+  background: var(--PRIMARY-BTN-CLR);
+  border-radius: var(--PRIMARY-BTN-BORDER-RADIUS);
+  color: #fff;
+  padding: var(--PRIMARY-BTN-PADDING-X) var(--PRIMARY-BTN-PADDING-Y);
+}
